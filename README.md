@@ -3,7 +3,7 @@
 
 ## Recursos utilizados
 - Spring Boot
-- Spring Data
+- Lombok
 - Openfeign
 - Validation
 - ExceptionHandler
