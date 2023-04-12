@@ -1,4 +1,4 @@
-## Desafio Técnico
+## Desafio Técnico 😉
 <hr>
 
 ## Recursos utilizados
