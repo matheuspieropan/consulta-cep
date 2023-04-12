@@ -1,7 +1,7 @@
 package com.pieropan.consultacep.controller;
 
 import com.pieropan.consultacep.dto.CepDTO;
-import com.pieropan.consultacep.feign.impl.ViaCepEndpointImpl;
+import com.pieropan.consultacep.service.ViaCepEndpointService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
@@ -15,11 +15,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class CepController {
 
     @Autowired
-    ViaCepEndpointImpl viaCepEndpointImpl;
+    ViaCepEndpointService viaCepEndpointService;
 
     @PostMapping("/consulta-endereco")
     public ResponseEntity obterCep(@RequestBody @Validated CepDTO cep) throws IllegalArgumentException {
 
-        return ResponseEntity.ok(viaCepEndpointImpl.obterCep(cep));
+        return ResponseEntity.ok(viaCepEndpointService.obterCep(cep));
     }
 }

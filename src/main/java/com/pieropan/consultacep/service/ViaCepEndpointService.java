@@ -1,4 +1,4 @@
-package com.pieropan.consultacep.feign.impl;
+package com.pieropan.consultacep.service;
 
 import com.pieropan.consultacep.dto.CepDTO;
 import com.pieropan.consultacep.dto.RetornoConsultaDTO;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 import java.util.Objects;
 
 @Service
-public class ViaCepEndpointImpl {
+public class ViaCepEndpointService {
 
     @Autowired
     ViaCepEndpoint viaCepEndpoint;
