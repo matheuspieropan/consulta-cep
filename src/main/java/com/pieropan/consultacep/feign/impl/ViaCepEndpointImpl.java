@@ -12,9 +12,9 @@ public class ViaCepEndpointImpl {
     @Autowired
     ViaCepEndpoint feignClient;
 
-    public RetornoConsultaDTO getCep(String cep) {
+    public RetornoConsultaDTO obterCep(String cep) {
 
-        RetornoConsultaDTO dto = feignClient.getCep(cep);
+        RetornoConsultaDTO dto = feignClient.obterCep(cep);
         dto.setFrete(RegiaoEnum.getRegiaoEnum(dto.getUf().toUpperCase()).valorFrete());
         return dto;
     }

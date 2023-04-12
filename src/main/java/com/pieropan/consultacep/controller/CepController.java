@@ -16,8 +16,8 @@ public class CepController {
     ViaCepEndpointImpl viaCepEndpointImpl;
 
     @GetMapping("/{cep}")
-    public ResponseEntity getCep(@PathVariable String cep) {
+    public ResponseEntity obterCep(@PathVariable String cep) {
 
-        return ResponseEntity.ok(viaCepEndpointImpl.getCep(cep));
+        return ResponseEntity.ok(viaCepEndpointImpl.obterCep(cep));
     }
 }

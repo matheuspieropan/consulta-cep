@@ -11,5 +11,5 @@ import org.springframework.web.bind.annotation.PathVariable;
 public interface ViaCepEndpoint {
 
     @GetMapping(value = "/ws/{cep}/json")
-    RetornoConsultaDTO getCep(@PathVariable String cep);
+    RetornoConsultaDTO obterCep(@PathVariable String cep);
 }
